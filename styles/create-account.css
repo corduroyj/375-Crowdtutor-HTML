@@ -28,6 +28,7 @@ html, body {
   @media screen and (max-width: 800px) {
     .right-panel {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      background-color: #679436;
     }
   }
   .create-account-form-base {
@@ -43,6 +44,15 @@ html, body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+  @media screen and (max-width: 800px) {
+    .create-account-form-base {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
   }
   .form-label {
     text-align: start;
