@@ -1,0 +1,24 @@
+:root {
+    /* Theme Colors */
+    --primary-blue: #05668D;
+    --secondary-blue: #427AA1;
+    --primary-green: #679436;
+    --secondary-green: #A5BE00;
+    --primary-grey: #EBF2FA;
+}
+.main {
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    flex-direction: row;
+    column-gap: 24px;
+    background-color: #ebf2fa;
+    grid-auto-flow: column;
+    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
