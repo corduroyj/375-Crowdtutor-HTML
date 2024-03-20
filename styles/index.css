@@ -4,7 +4,10 @@
     --secondary-blue: #427AA1;
     --primary-green: #679436;
     --secondary-green: #A5BE00;
-    --primary-grey: #EBF2FA;
+    --primary-grey: #e7ebf0;
+    --primary-beige: #E9E2D0;
+    --light-blue: #9cc3df;
+
 }
 .main {
     margin: 0 auto;
@@ -12,7 +15,7 @@
     display: grid;
     flex-direction: row;
     column-gap: 24px;
-    background-color: #ebf2fa;
+    background-color: #9cc3df;
     grid-auto-flow: column;
     min-height: 100%;
     width: 100vw;
@@ -21,4 +24,22 @@
     justify-content: center;
     justify-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.back-gradient {
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    background-image: linear-gradient(#05668D 25%, #427AA1 25%, #427AA1 50%, #679436 50%, #679436 75%, #A5BE00 75%, #A5BE00 100%);
+}
+.profile-card{
+    width: 75vw;
+    height: 70vh;
+    position: absolute;
+    background-color: var(--primary-beige);
+    border-radius: 30px;
+}
+.prof-col{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
 }
