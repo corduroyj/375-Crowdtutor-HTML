@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.main {
+    background-color: #ebf2fa;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .left-panel {
+    width: 50%;
+    height: 100vh;
+    background-color: #679436;
+  }
+  @media screen and (max-width: 800px) {
+    .left-panel {
+      width: 0%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+  .right-panel {
+    width: 50%;
+    height: 100vh;
+  }
+  @media screen and (max-width: 800px) {
+    .right-panel {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+  .create-account-form-base {
+    width: 75%;
+    min-width: 375px;
+    height: 85%;
+    position: relative;
+    margin: auto;
+    top: 7.5%;
+    background-color: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form-label {
+    text-align: start;
+    width: 75%;
+    position: relative;
+    margin: auto;
+    font-size: 1em;
+    direction: ltr;
+  }
+  .form-inputs {
+    text-align: start;
+    width: 95%;
+    border: none;
+  }
+  .form-hr {
+    border: 1px solid black;
+  }
+  .form-btn {
+    width: 100%;
+    height: 2.5em;
+    border-radius: 30px;
+    position: relative;
+    font-weight: 700;
+    font-size: 1em;
+    color: white;
+    background-color: #a5be00;
+    border: none;
+    cursor: pointer;
+  }
+  .red-text {
+    color: #ff0000;
+  }
+  .create-header {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+@media screen and (max-width: 800px) {
+.main {
+    /* display: grid;  */
+    /* The width is 100%, when the viewport is 800px or smaller */
+    justify-content: center;
+}
+}
