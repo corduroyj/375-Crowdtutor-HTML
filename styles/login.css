@@ -12,7 +12,7 @@
     display: grid;
     flex-direction: row;
     column-gap: 24px;
-    background-color: #ebf2fa;
+    background-color: #9cc3df;
     grid-auto-flow: column;
     min-height: 100%;
     width: 100vw;
