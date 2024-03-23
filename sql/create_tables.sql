@@ -4,7 +4,7 @@ CREATE TABLE UserAccount (
     phoneNum VARCHAR(64),
     password VARCHAR(128), NOT NULL
     email VARCHAR(128) NOT NULL,
-    userActive int(1), --bool value 1 for true 0 for false
+    userActive int(1),
     wantLongTerm int(1),
     learnerCount int(32),
     currentHours int(3),
@@ -16,7 +16,7 @@ CREATE TABLE LearnerPreference (
     learnerPrefID int(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     learnerID int(8) REFERENCES UserAccount(userID),
     tutorGender VARCHAR(64),
-    knowledgeLevel int(2), -- rating from 1 to 10
+    knowledgeLevel int(2),
     prefOnline int(1)
 );
 
@@ -33,13 +33,13 @@ CREATE TABLE AvailableTimeslot (
     timeslotUserID int(8) REFERENCES UserAccount(userID),
     startTime DATE,
     timeslotLength int(3),
-    repeat int(1)
+    repeatFlag int(1)
 );
 
 CREATE TABLE UserBlock (
     userBlockID int(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    userID int(8) REFERENCES UserAccount(userID), --The user who is requesting to block someone
-    blockUserID int(8) REFERENCES UserAccount(userID) --The user to be blocked
+    userID int(8) REFERENCES UserAccount(userID),
+    blockUserID int(8) REFERENCES UserAccount(userID)
 );
 
 CREATE TABLE Course (
@@ -61,5 +61,5 @@ CREATE TABLE TutoringSession (
     tutorID int(8) REFERENCES UserAccount(userID) NOT NULL,
     courseID int(8) REFERENCES Course(courseID),
     startTime DATE,
-    sessionLength int(2) --In hours currently could be changed to datetime and have time calculation done in query
+    sessionLength int(2)
 );
