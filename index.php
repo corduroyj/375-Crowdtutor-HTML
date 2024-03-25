@@ -1,3 +1,7 @@
+<?php
+    include "includes/auth.inc.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +18,6 @@
     <!-- Custom styles for this template -->
     <link href="styles/index.css" rel="stylesheet">
 </head>
-
-
 
 <body>
     <div class="main">
